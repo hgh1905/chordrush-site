@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChordRush Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1b1f27; --bg: #ffffff; --muted: #5a6273; --line: #e3e6ec; --accent: #1f8fb8; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8ebf1; --bg: #0f131a; --muted: #9aa3b5; --line: #26303e; --accent: #4cc9f0; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Segoe UI", "Noto Sans", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.7em; margin: 0 0 4px; }
+  .meta { color: var(--muted); margin-bottom: 32px; }
+  h2 { font-size: 1.15em; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95em; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  a { color: var(--accent); }
+  .lang { float: right; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+  <a class="lang" href="privacy.html">한국어</a>
+  <h1>ChordRush Privacy Policy</h1>
+  <p class="meta">Effective date: November 1, 2026</p>
+
+  <p>ChordRush (the "app") is a game for practising how to read and play piano chords. The app does not collect personal information and does not send any data over the network. This document explains what information the app handles on your device and how.</p>
+
+  <h2>1. Personal information we collect</h2>
+  <p>None. The app has no sign-up or login and does not collect names, email addresses, location, advertising identifiers, device identifiers or any other information that could identify you. It contains no analytics tools, no advertising SDKs and no communication with external servers.</p>
+
+  <h2>2. Microphone use</h2>
+  <p>The microphone is used only when you choose "Microphone" as the input method in Settings. Audio is analysed on the device in real time to detect pitches, and:</p>
+  <ul>
+    <li>audio is never saved as a recording;</li>
+    <li>audio never leaves the device;</li>
+    <li>only the analysis result (detected note names) is used to judge your answer;</li>
+    <li>with touch or MIDI input the microphone is not used at all.</li>
+  </ul>
+
+  <h2>3. Information stored on your device</h2>
+  <p>The following information is stored only on your device so that the app can work. It is never transmitted anywhere.</p>
+  <table>
+    <tr><th>Item</th><th>Contents</th></tr>
+    <tr><td>Game settings</td><td>Selected chord types, level, display mode, input method and similar options</td></tr>
+    <tr><td>Play results</td><td>Score, number of correct answers, date played</td></tr>
+    <tr><td>Microphone calibration</td><td>Harmonic ratios and tuning offset of your instrument (numeric values), measured only if you run "Microphone learning"</td></tr>
+    <tr><td>Microphone diagnostic log</td><td>For each judgement in microphone mode, the expected chord and the list of detected note names. No audio is included.</td></tr>
+  </table>
+  <p>The microphone diagnostic log is passed to an app of your choice through the system share sheet only when you tap the "Share" button yourself. The app never sends the log on its own.</p>
+
+  <h2>4. Deleting information</h2>
+  <p>Uninstalling the app deletes all stored information. Diagnostic logs can also be deleted individually from the microphone diagnostics screen inside the app.</p>
+
+  <h2>5. Permissions used</h2>
+  <table>
+    <tr><th>Permission</th><th>Purpose</th></tr>
+    <tr><td>Microphone (RECORD_AUDIO)</td><td>Pitch analysis of your playing in microphone input mode</td></tr>
+    <tr><td>Audio settings (MODIFY_AUDIO_SETTINGS)</td><td>Configuring the audio mode for note playback and microphone input</td></tr>
+    <tr><td>Foreground service (media playback)</td><td>Required by the audio library to keep note playback stable</td></tr>
+  </table>
+
+  <h2>6. Children's privacy</h2>
+  <p>The app collects no personal information from anyone, and therefore collects none from children.</p>
+
+  <h2>7. Sharing with third parties</h2>
+  <p>Since no personal information is collected, none is shared with or processed by third parties.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>If new features change how the app handles information, this document will be updated and the effective date changed.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about privacy: <a href="mailto:HansAIsolution@gmail.com">HansAIsolution@gmail.com</a></p>
+</main>
+</body>
+</html>
