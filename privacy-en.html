@@ -23,54 +23,70 @@
 <main>
   <a class="lang" href="privacy.html">한국어</a>
   <h1>ChordRush Privacy Policy</h1>
-  <p class="meta">Effective date: November 1, 2026</p>
+  <p class="meta">Effective date: November 20, 2026 (previous version: November 1, 2026)</p>
+  <p>ChordRush (the "app") is a game for practising how to read and play piano chords. You can use the app without signing in; in that case it collects no personal information and sends no data over the network. If you choose to sign in, your play records are stored on our server and you can join the ranking. The information collected in that case is described below.</p>
 
-  <p>ChordRush (the "app") is a game for practising how to read and play piano chords. The app does not collect personal information and does not send any data over the network. This document explains what information the app handles on your device and how.</p>
+  <h2>1. Users who do not sign in</h2>
+  <p>Nothing is collected. The app does not collect registration details, names, email addresses, location, advertising identifiers, device identifiers or any other information that could identify you, and it contains no analytics tools or advertising SDKs. Opening the ranking screen downloads the public ranking list from the server, but no information about you is sent.</p>
 
-  <h2>1. Personal information we collect</h2>
-  <p>None. The app has no sign-up or login and does not collect names, email addresses, location, advertising identifiers, device identifiers or any other information that could identify you. It contains no analytics tools, no advertising SDKs and no communication with external servers.</p>
+  <h2>2. Users who sign in (optional)</h2>
+  <p>The following information is collected only if you choose Google, Kakao or Naver sign-in on the "Account" screen.</p>
+  <table>
+    <tr><th>Item</th><th>Details</th><th>Purpose</th></tr>
+    <tr><td>Social account identifier</td><td>The unique user ID issued by the sign-in provider (Google/Kakao/Naver). Only this ID is stored; the app never has access to your provider password.</td><td>Identifying you and linking records when you sign in again</td></tr>
+    <tr><td>Display name</td><td>The nickname (name) from your provider profile. You can change it in the app.</td><td>Shown on the ranking</td></tr>
+    <tr><td>Play records</td><td>Score, hits and misses, accuracy, max combo, level, chord types, date played</td><td>Keeping your history, restoring it on a new device, computing the ranking</td></tr>
+    <tr><td>Sign-in times</td><td>Account creation date and last sign-in time</td><td>Service operation</td></tr>
+  </table>
+  <p>We do not request or store your email address, phone number, date of birth or profile photo. Only your display name and scores are visible on the ranking; the social account identifier is never shown.</p>
 
-  <h2>2. Microphone use</h2>
-  <p>The microphone is used only when you choose "Microphone" as the input method in Settings. Audio is analysed on the device in real time to detect pitches, and:</p>
+  <h2>3. Microphone use</h2>
+  <p>The microphone is used only when you select "Microphone" as the input method in Settings. Audio is analysed in real time on the device, for pitch detection only:</p>
   <ul>
-    <li>audio is never saved as a recording;</li>
-    <li>audio never leaves the device;</li>
-    <li>only the analysis result (detected note names) is used to judge your answer;</li>
-    <li>with touch or MIDI input the microphone is not used at all.</li>
+    <li>Audio is never saved as a recording.</li>
+    <li>Audio never leaves the device, whether or not you are signed in.</li>
+    <li>Only the analysis result (detected note names) is used for judging the game.</li>
+    <li>With touch or MIDI input the microphone is not used at all.</li>
   </ul>
 
-  <h2>3. Information stored on your device</h2>
-  <p>The following information is stored only on your device so that the app can work. It is never transmitted anywhere.</p>
+  <h2>4. Information stored on your device</h2>
+  <p>The following is stored on your device so the app can work. Except for play results, none of it is sent anywhere.</p>
   <table>
-    <tr><th>Item</th><th>Contents</th></tr>
-    <tr><td>Game settings</td><td>Selected chord types, level, display mode, input method and similar options</td></tr>
-    <tr><td>Play results</td><td>Score, number of correct answers, date played</td></tr>
-    <tr><td>Microphone calibration</td><td>Harmonic ratios and tuning offset of your instrument (numeric values), measured only if you run "Microphone learning"</td></tr>
-    <tr><td>Microphone diagnostic log</td><td>For each judgement in microphone mode, the expected chord and the list of detected note names. No audio is included.</td></tr>
+    <tr><th>Item</th><th>Details</th></tr>
+    <tr><td>Game settings</td><td>Selected chord types, level, display mode, input method, language, etc.</td></tr>
+    <tr><td>Play results</td><td>Score, hits, date played. Also stored on the server if you are signed in.</td></tr>
+    <tr><td>Sign-in session</td><td>If signed in, the authentication token issued by the server and your display name</td></tr>
+    <tr><td>Microphone calibration</td><td>Overtone ratios and tuning offset of your instrument (numeric values) measured when you run "Learn my piano"</td></tr>
+    <tr><td>Microphone diagnostic log</td><td>For microphone mode, the expected chord and detected note names of each judgement. No audio is included.</td></tr>
   </table>
-  <p>The microphone diagnostic log is passed to an app of your choice through the system share sheet only when you tap the "Share" button yourself. The app never sends the log on its own.</p>
+  <p>The diagnostic log leaves the device only when you tap "Share" yourself, through the device share sheet, to an app you choose.</p>
 
-  <h2>4. Deleting information</h2>
-  <p>Uninstalling the app deletes all stored information. Diagnostic logs can also be deleted individually from the microphone diagnostics screen inside the app.</p>
+  <h2>5. Retention and deletion</h2>
+  <ul>
+    <li>Information on the device is removed when you uninstall the app. Records and diagnostic logs can also be deleted inside the app.</li>
+    <li>Account information and play records on the server are kept until you delete your account. Tapping <b>Delete account</b> on the app's "Account" screen immediately deletes the account and all records stored on the server. If you cannot use the app, follow the <a href="delete-account.html">account deletion instructions</a> to request deletion by email; requests are handled within 7 days.</li>
+    <li>Signing out alone keeps your server records; they are restored when you sign in again with the same social account.</li>
+  </ul>
 
-  <h2>5. Permissions used</h2>
+  <h2>6. Sharing with third parties</h2>
+  <p>We do not sell or share the collected information with third parties. When you sign in, our server verifies the token issued by the sign-in provider (Google LLC, Kakao, Naver) with that provider; this communication is governed by each provider's privacy policy. The server is operated by the developer and all traffic is encrypted with HTTPS.</p>
+
+  <h2>7. Permissions used</h2>
   <table>
     <tr><th>Permission</th><th>Purpose</th></tr>
     <tr><td>Microphone (RECORD_AUDIO)</td><td>Pitch analysis of your playing in microphone input mode</td></tr>
-    <tr><td>Audio settings (MODIFY_AUDIO_SETTINGS)</td><td>Configuring the audio mode for note playback and microphone input</td></tr>
+    <tr><td>Audio settings (MODIFY_AUDIO_SETTINGS)</td><td>Setting the audio mode for note playback and microphone input</td></tr>
+    <tr><td>Internet (INTERNET)</td><td>Sign-in, saving records, loading the ranking</td></tr>
     <tr><td>Foreground service (media playback)</td><td>Required by the audio library to keep note playback stable</td></tr>
   </table>
 
-  <h2>6. Children's privacy</h2>
-  <p>The app collects no personal information from anyone, and therefore collects none from children.</p>
+  <h2>8. Children's privacy</h2>
+  <p>The app is intended for users aged 13 and over. Children under 14 are advised not to use the sign-in feature, and any account found to belong to a child is deleted without delay.</p>
 
-  <h2>7. Sharing with third parties</h2>
-  <p>Since no personal information is collected, none is shared with or processed by third parties.</p>
+  <h2>9. Changes to this policy</h2>
+  <p>If the way information is handled changes, this document is updated and the effective date changed. Revision of November 20, 2026: added sections for optional sign-in, server-side records and the ranking feature.</p>
 
-  <h2>8. Changes to this policy</h2>
-  <p>If new features change how the app handles information, this document will be updated and the effective date changed.</p>
-
-  <h2>9. Contact</h2>
+  <h2>10. Contact</h2>
   <p>Questions about privacy: <a href="mailto:HansAIsolution@gmail.com">HansAIsolution@gmail.com</a></p>
 </main>
 </body>
